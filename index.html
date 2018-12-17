@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body class="h-100">
+<div class="backgroung h-100 w-100 bgcolor">
+    <div class="container">
+
+
+        <div class="row justify-content-center text-center text-white ">
+            <div class="col-12 justify-content-center my-4">
+                <h4> Change this smily on click </h4>
+
+                <img id="smily" onclick="smil()" src="image/smily.png" height="300" width="300" class="center">
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+<script>
+    var imgclick="smily.png"
+
+   function smil()
+   {
+       if ( imgclick== "smily.png" ) {
+           document.getElementById("smily").src="image/smily.png";
+
+           imgclick  = "Sad.png";
+       }
+       else {
+           document.getElementById("smily").src="image/Sad.png";
+           imgclick = "smily.png";
+       }
+   }
+
+
+
+</script>
+
+</body>
+</html>
